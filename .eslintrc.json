@@ -1,0 +1,103 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": ["plugin:prettier/recommended"],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": ["react", "prettier"],
+    "rules": {
+        // added
+        "arrow-parens": "warn",
+        // "indent": "off",
+        "import/first": "off",
+        "import/newline-after-import": "off",
+        "linebreak-style": "off",
+        // "max-len": "off",
+        "object-curly-spacing": "off",
+        "padded-blocks": "off",
+        "no-console": "warn",
+        "no-alert": "error",
+        "spaced-comment": "warn",
+        // "react/jsx-indent": "off",
+        "react/jsx-filename-extension": "off",
+        "react/jsx-one-expression-per-line": "off",
+        "react/jsx-first-prop-new-line": "off",
+        "react/forbid-prop-types": "off",
+
+        //copied from C:\Work\Projects\ExtendHealth\Eligibility-File-Management-Utility
+        "camelcase": "error",
+        "comma-spacing": "warn",
+        "comma-style": "warn",
+        "curly": ["warn", "all"],
+        "dot-notation": ["error", {
+            "allowKeywords": true
+        }], // allowing keywords could be an issue.
+        "eol-last": "off",
+        "eqeqeq": ["error", "smart"],
+        "guard-for-in": "error",
+        "key-spacing": "warn",
+        "max-depth": ["error", 6],
+        "new-cap": "off",
+        "no-bitwise": "off",
+        "no-caller": "error",
+        "comma-dangle": ["error", "never"],
+        "no-cond-assign": ["error", "except-parens"],
+        "no-debugger": "error",
+        "no-empty": "error",
+        "no-eval": "error",
+        "no-extend-native": "error",
+        "no-extra-parens": "off",
+        "no-irregular-whitespace": "warn",
+        "no-iterator": "error",
+        "no-loop-func": "error",
+        "no-mixed-requires": "warn",
+        "no-multi-spaces": "warn",
+        "no-mixed-spaces-and-tabs": "warn",
+        "no-multi-str": "error",
+        "no-new": "error",
+        "no-proto": "error",
+        "no-script-url": "error",
+        "no-sequences": "error",
+        "no-shadow": "warn",
+        "no-trailing-spaces": "off",
+        "no-undef": "error",
+        "no-undef-init": "warn",
+        "no-underscore-dangle": "off",
+        "no-unused-expressions": "warn",
+        "no-unused-vars": ["error", {
+            "vars": "all",
+            "args": "none"
+        }],
+        "no-useless-escape": "off",
+        "no-use-before-define": ["error", "nofunc"],
+        "no-with": "error",
+        // "quotes": ["warn", "single", "avoid-escape"],
+
+        "semi": ["error", "always"],
+        "space-infix-ops": "warn",
+        "space-in-parens": ["error"],
+        "valid-typeof": "error",
+        "yoda": "warn",
+        "wrap-iife": ["error", "inside"],
+
+        "react/jsx-key": "off",
+        "react/jsx-uses-vars": "error",
+        "react/jsx-uses-react": "error",
+        "react/no-find-dom-node": "off",
+        "react/no-string-refs": "off",
+        "react/prop-types": "off"
+
+    }
+}
